@@ -41,7 +41,7 @@ class APTE {
 	/**
 	 * @param PHPMailer $phpmailer
 	 */
-	public function set_plaintext_body( $phpmailer ) {
+	public function set_plaintext_body( PHPMailer $phpmailer ) {
 
 		// don't run if sending plain text email already
 		if( $phpmailer->ContentType === 'text/plain' ) {
