@@ -4,7 +4,7 @@ Donate link: https://dannyvankooten.com/donate/
 Tags: email, text email, html email, spam, spamassassin
 Requires at least: 3.1
 Tested up to: 6.1
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,7 +22,8 @@ If you have more question about the why's of this plugin, take a look at the FAQ
 
 **More information**
 
-Check out more [WordPress plugins](https://dannyvankooten.com/wordpress-plugins/?utm_source=wp-plugin-repo&utm_medium=link&utm_campaign=more-info-link) by [Danny van Kooten](https://dannyvankooten.com?utm_source=wp-plugin-repo&utm_medium=link&utm_campaign=more-info-link) or [contact him on Twitter](http://twitter.com/dannyvankooten).
+- More [WordPress plugins](https://dannyvankooten.com/wordpress-plugins/) by Danny van Kooten.
+- Source code of this plugin on SourceHut: [~dvko/wp-add-plaintext-email](https://git.sr.ht/~dvko/wp-add-plaintext-email)
 
 == Installation ==
 
@@ -35,7 +36,7 @@ Check out more [WordPress plugins](https://dannyvankooten.com/wordpress-plugins/
 == Frequently Asked Questions ==
 
 = Why add a plain text version? =
-Because it decreases the chance of your *legit* email being marked as being spam and thus landing (disappearing) in spam folders.
+Because it decreases the chance of your *legit* email being marked as being spam and thus disappearing in spam folders.
 
 http://wiki.apache.org/spamassassin/Rules/MIME_HTML_ONLY
 
@@ -56,6 +57,12 @@ http://spamscorechecker.com/
 http://www.port25.com/support/authentication-center/email-verification/
 
 == Changelog ==
+
+= 1.1.3 - Dec 23, 2022 =
+
+- Remove incorrectly working check to prevent running more than once.
+- Update tested WP version.
+- Add license information to source code.
 
 = 1.1.2 - September 1, 2015 =
 
