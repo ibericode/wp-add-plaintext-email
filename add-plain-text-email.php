@@ -26,15 +26,9 @@ defined( 'ABSPATH' ) OR exit;
 class APTE {
 
 	/**
-	 * @var string
-	 */
-	protected $previous_altbody;
-
-	/**
 	 * Add hooks
 	 */
 	public function add_hooks() {
-		// add action so function actually runs
 		add_action('phpmailer_init', array( $this, 'set_plaintext_body' ) );
 	}
 
@@ -48,15 +42,13 @@ class APTE {
 			return;
 		}
 
-		// don't run if altbody is set (by other plugin)
-		if( ! empty( $phpmailer->AltBody ) && $phpmailer->AltBody !== $this->previous_altbody ) {
+		// don't run if AltBody is set (by other plugin)
+		if( ! empty( $phpmailer->AltBody ) ) {
 			return;
 		}
 
 		// set AltBody
-		$text_message = $this->strip_html_tags( $phpmailer->Body );
-		$phpmailer->AltBody = $text_message;
-		$this->previous_altbody = $text_message;
+		$phpmailer->AltBody = $this->strip_html_tags( $phpmailer->Body );
 	}
 
 	/**
@@ -99,11 +91,8 @@ class APTE {
 
 		// strip all remaining HTML tags
 	    $text = strip_tags( $text );
-
-		// trim text
-		$text = trim( $text );
-
-		return $text;
+		
+		return  trim( $text );
 	}
 
 }
