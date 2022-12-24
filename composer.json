@@ -1,0 +1,17 @@
+{
+    "name": "dannyvankooten/wp-add-plaintext-email",
+    "type": "wordpress-plugin",
+    "description": "WordPress plugin to automatically generate a plaintext version of HTML emails sent with wp_mail",
+    "keywords": ["wordpress","cdn"],
+    "homepage": "https://git.sr.ht/~dvko/wp-add-plaintext-email",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Danny van Kooten",
+            "homepage": "http://dvk.co"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.0"
+    }
+}
