@@ -60,7 +60,7 @@ http://www.port25.com/support/authentication-center/email-verification/
 
 = 1.2 - Nov 20, 2023 =
 
-- Preserve href attribute from <a> elements. Thanks Benjamin Danon!
+- Preserve href attribute from `<a>` elements. Thanks Benjamin Danon!
 - Remove `PHPMailer` parameter type as it somehow isn't working on some set-ups...
 
 
