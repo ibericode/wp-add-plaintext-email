@@ -3,8 +3,8 @@ Contributors: DvanKooten, Ibericode
 Donate link: https://dannyvankooten.com/donate/
 Tags: email, text email, html email, spam, spamassassin
 Requires at least: 3.1
-Tested up to: 6.1
-Stable tag: 1.1.3
+Tested up to: 6.4
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,12 @@ http://spamscorechecker.com/
 http://www.port25.com/support/authentication-center/email-verification/
 
 == Changelog ==
+
+= 1.2 - Nov 20, 2023 =
+
+- Preserve href attribute from <a> elements. Thanks Benjamin Danon!
+- Remove `PHPMailer` parameter type as it somehow isn't working on some set-ups...
+
 
 = 1.1.3 - Dec 23, 2022 =
 
