@@ -5,8 +5,8 @@ Tags: email, text email, html email, spam, spamassassin
 Requires at least: 3.1
 Tested up to: 6.6
 Stable tag: 1.2.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Adds a text/plain email to text/html emails to decrease the chance of emails being tagged as spam.
 
