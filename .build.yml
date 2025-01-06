@@ -8,6 +8,7 @@ tasks:
   - run_linter: |
       cd wp-add-plaintext-email
       composer run check-syntax
+      php ./tests/test.php
 triggers:
   - action: email
     condition: failure

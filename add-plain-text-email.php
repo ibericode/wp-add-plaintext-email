@@ -28,7 +28,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 defined( 'ABSPATH' ) OR exit;
 
-class APTE {
+class Add_Plain_Text_Email {
 
     /**
      * Add hooks
@@ -63,7 +63,7 @@ class APTE {
      * script code, and embedded objects.  Add line breaks around
      * block-level tags to prevent word joining after tag removal.
      */
-    private function strip_html_tags( $text ) {
+    public function strip_html_tags( $text ) {
         $text = preg_replace(
             array(
               // Remove invisible content
@@ -74,8 +74,8 @@ class APTE {
                 '@<embed[^>]*?.*?</embed>@siu',
                 '@<noscript[^>]*?.*?</noscript>@siu',
                 '@<noembed[^>]*?.*?</noembed>@siu',
-                '@\t+@siu',
-                '@\n+@siu'
+                '@\t+@su',
+                '@\n+@su'
             ),
             '',
             $text );
@@ -107,5 +107,5 @@ class APTE {
 
 }
 
-$apte = new APTE;
+$apte = new Add_Plain_Text_Email;
 $apte->add_hooks();
