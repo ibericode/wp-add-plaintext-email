@@ -4,7 +4,7 @@ Donate link: https://dannyvankooten.com/donate/
 Tags: email, text email, html email, spam, spamassassin
 Requires at least: 3.1
 Tested up to: 6.7
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 

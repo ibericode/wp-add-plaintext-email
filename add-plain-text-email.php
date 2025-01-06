@@ -3,7 +3,7 @@
 Plugin Name: Add Plain Text Email
 Plugin URI: http://www.dannyvankooten.com/
 Description: Adds a text/plain email to text/html emails to decrease the chance of emails being tagged as spam.
-Version: 1.2.0
+Version: 1.2.1
 Author: Danny van Kooten
 Author URI: http://dannyvanKooten.com
 License: GPL v3 or later
