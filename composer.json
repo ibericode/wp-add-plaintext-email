@@ -13,5 +13,8 @@
     ],
     "require": {
         "php": ">=5.2.0"
+    },
+    "scripts": {
+        "check-syntax": "find . -name '*.php' -not -path './vendor/*' -not -path './node_modules/*' -not -path './assets/*' -print0 | xargs -0 -n1 php -l"
     }
 }

@@ -1,0 +1,15 @@
+image: alpine/latest
+packages:
+  - php
+  - composer
+sources:
+  - https://git.sr.ht/~dvko/wp-add-plaintext-email
+tasks:
+  - run_linter: |
+      cd wp-add-plaintext-email
+      composer run check-syntax
+triggers:
+  - action: email
+    condition: failure
+    to: hi@dvk.co
+
