@@ -3,18 +3,18 @@
     "type": "wordpress-plugin",
     "description": "WordPress plugin to automatically generate a plaintext version of HTML emails sent with wp_mail",
     "keywords": ["wordpress","cdn"],
-    "homepage": "https://git.sr.ht/~dvko/wp-add-plaintext-email",
+    "homepage": "https://github.com/ibericode/wp-add-plaintext-email",
     "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Danny van Kooten",
-            "homepage": "http://dvk.co"
+            "homepage": "https://www.dannyvankooten.com"
         }
     ],
     "require": {
-        "php": ">=5.2.0"
+        "php": ">=7.4.0"
     },
     "scripts": {
-        "check-syntax": "find . -name '*.php' -not -path './vendor/*' -not -path './node_modules/*' -not -path './assets/*' -print0 | xargs -0 -n1 php -l"
+        "check-syntax": "find . -path ./vendor -prune -o -type f -name '*.php' -print0 | xargs -0 -n1 -P4 php --define error_reporting=-1 -l -n | (! grep -v \"No syntax errors detected\" )"
     }
 }
