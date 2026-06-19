@@ -6,6 +6,7 @@ Description: Adds a text/plain email to text/html emails to decrease the chance 
 Version: 1.2.1
 Author: Danny van Kooten
 Author URI: https://www.dannyvanKooten.com
+Requires PHP: 7.4
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
