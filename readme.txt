@@ -3,7 +3,8 @@ Contributors: DvanKooten, Ibericode
 Donate link: https://dannyvankooten.com/donate/
 Tags: email, text email, html email, spam, spamassassin
 Requires at least: 3.1
-Tested up to: 6.7
+Requires PHP: 7.4
+Tested up to: 7.0
 Stable tag: 1.2.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -18,12 +19,13 @@ This plugin will add a `plain/text` version of your HTML emails to your WordPres
 
 This plugin comes without any settings. When activated, it will automatically look for HTML emails being sent using the `wp_mail()` function and when necessary add the plain text version.
 
-If you have more question about the why's of this plugin, take a look at the FAQ.
+The source code of this plugin is available on GitHub: [ibericode/wp-add-plaintext-email](https://github.com/ibericode/wp-add-plaintext-email).
 
-**More information**
+**About the plugin author**
 
-- More [WordPress plugins](https://dannyvankooten.com/wordpress-plugins/) by Danny van Kooten.
-- Source code of this plugin on SourceHut: [~dvko/wp-add-plaintext-email](https://git.sr.ht/~dvko/wp-add-plaintext-email)
+[Danny van Kooten](https://www.dannyvankooten.com/) has been building WordPress plugins since 2010, starting with WordPress 3.0.
+
+He is the founder of [ibericode](https://www.ibericode.com/), the small software company behind popular WordPress plugins including [Mailchimp for WordPress](https://wordpress.org/plugins/mailchimp-for-wp/) and [Koko Analytics](https://wordpress.org/plugins/koko-analytics/).
 
 == Installation ==
 
